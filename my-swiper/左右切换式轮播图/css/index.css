@@ -1,0 +1,67 @@
+.container {
+  width: 650px;
+  height: 400px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+.container .banner {
+  height: 100%;
+  width: 650px;
+  position: relative;
+  left: 0;
+}
+.container .banner li {
+  height: 100%;
+  width: 650px;
+  float: left;
+  position: relative;
+}
+.container .banner li img {
+  height: 100%;
+  width: 100%;
+}
+.container .btn {
+  color: #fff;
+  font-size: 20px;
+}
+.container .btn .left-btn {
+  width: 30px;
+  height: 30px;
+  background-color: lightgrey;
+  border-radius: 0 50% 50% 0;
+  padding-left: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .btn .right-btn {
+  width: 30px;
+  height: 30px;
+  background-color: lightgrey;
+  border-radius: 50% 0 0 50%;
+  text-align: right;
+  padding-right: 5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .dot {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+}
+.container .dot li {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+.container .dot li.current {
+  background-color: darkcyan;
+}

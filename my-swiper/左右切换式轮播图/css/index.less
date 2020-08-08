@@ -1,0 +1,80 @@
+.container{
+    width: 650px;
+    height: 400px;
+    margin:50px auto;
+    position: relative;
+    overflow: hidden;
+
+    //轮播图banner样式
+    .banner{
+        height: 100%;
+        width: 650px;
+        position: relative;
+        left:0;
+
+        li{
+            height: 100%;
+            width: 650px;
+            float:left;
+            position: relative;
+
+            img{
+                height: 100%;
+                width: 100%;
+
+            }
+        }
+    }
+
+    //左右控制按钮样式
+    .btn{
+        color:#fff;
+        font-size: 20px;
+
+        .left-btn{
+            width: 30px;
+            height: 30px;
+            background-color: lightgrey;
+            border-radius: 0 50% 50% 0;
+            padding-left:5px;
+            position: absolute;
+            left:0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+
+        .right-btn{
+            width: 30px;
+            height: 30px;
+            background-color: lightgrey;
+            border-radius: 50% 0 0 50%;
+            text-align: right;
+            padding-right:5px;
+            position: absolute;
+            right:0;
+            top:50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    //dot样式
+    .dot{
+        position: absolute;
+        left:50%;
+        bottom:5px;
+        transform: translateX(-50%);
+
+        li{
+            float:left;
+            width: 12px;
+            height: 12px;
+            margin:5px;
+            background-color: lightgrey;
+            border-radius: 50%;
+        }
+
+        li.current{
+            background-color: darkcyan;
+        }
+    }
+}
