@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>轮播图</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+<!--第一个轮播图-->
+<div class="container">
+
+  <!--轮播区域-->
+  <ul class="banner">
+    <!--<li>-->
+      <!--<img src="img1.jpg" alt="">-->
+    <!--</li>-->
+  </ul>
+
+  <!--左右箭头-->
+  <div class="btn">
+    <span class="left-btn"> < </span>
+    <span class="right-btn"> > </span>
+  </div>
+
+  <!--底部焦点-->
+  <ul class="dot">
+    <!--<li class="current"></li>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+    <!--<li></li>-->
+  </ul>
+</div>
+
+
+
+
+<!--第二个轮播图-->
+<!--
+<div class="container">
+
+  &lt;!&ndash;轮播区域&ndash;&gt;
+  <ul class="banner">
+    &lt;!&ndash;<li>&ndash;&gt;
+      &lt;!&ndash;<img src="img1.jpg" alt="">&ndash;&gt;
+    &lt;!&ndash;</li>&ndash;&gt;
+  </ul>
+
+  &lt;!&ndash;左右箭头&ndash;&gt;
+  <div class="btn">
+    <span class="left-btn"> < </span>
+    <span class="right-btn"> > </span>
+  </div>
+
+  &lt;!&ndash;底部焦点&ndash;&gt;
+  <ul class="dot">
+    &lt;!&ndash;<li class="current"></li>&ndash;&gt;
+    &lt;!&ndash;<li></li>&ndash;&gt;
+    &lt;!&ndash;<li></li>&ndash;&gt;
+    &lt;!&ndash;<li></li>&ndash;&gt;
+  </ul>
+</div>
+-->
+
+<script src="./js/utils.js"></script>
+<!--<script src="./js/index.js"></script>-->
+<!--<script src="./js/index_promise.js"></script>-->
+<script src="./js/index_ES6.js"></script>
+<script>
+
+  let containerBox1 = document.getElementsByClassName('container')[0];
+  // let containerBox2 = document.getElementsByClassName('container')[1];
+
+
+  // 图片url必传，轮播图默认展示在样式类名为 containerBox 的元素中，如果想要实现多个轮播图，需要传递el参数
+  // new Swiper({
+  //   url:'./data.json',  //请求回来的数据中的每一项里的 src 代表当前图片地址
+  //   el:containerBox,
+  //   auto:true,          //是否自动播放
+  //   interval:2000,      //轮播时间间隔
+  //   duration:500,       //切换动画时间
+  // })
+
+  new Swiper({
+    url:'./data.json',
+    el:containerBox1
+  })
+
+  // new Swiper({
+  //   url:'./data.json',
+  //   el:containerBox2
+  // })
+
+</script>
+
+</body>
+</html>

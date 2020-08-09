@@ -1,0 +1,18 @@
+[
+  {
+    "src":"./images/image1.jpg",
+    "title":"img1"
+  },
+  {
+    "src":"./images/image2.jpg",
+    "title":"img2"
+  },
+  {
+    "src":"./images/image3.jpg",
+    "title":"img3"
+  },
+  {
+    "src":"./images/image4.jpg",
+    "title":"img4"
+  }
+]
