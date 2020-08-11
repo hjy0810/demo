@@ -1,8 +1,7 @@
 //获取元素
 let containerBox = document.getElementById('container'),
     navLists = containerBox.getElementsByTagName('a'),    //头部导航，点击排序
-    ulBox = document.getElementById('list'),              //商品盒子
-    liLists = ulBox.getElementsByTagName('li'),           //商品列表
+    ulBox = document.getElementById('list'),              //商品列表盒子
     data = null;
 
 //初始化
